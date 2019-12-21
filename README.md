@@ -1,2 +1,5 @@
 # savannah-bs4
-Savannah - Travel Bootstrap 4 theme
+Savannah is a free Bootstrap 4 theme for Travel and expeditions.
+
+## Screenshot
+![Screenshot](/screenshot.jpg)
