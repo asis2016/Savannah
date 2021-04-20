@@ -1,0 +1,406 @@
+/* 
+    Created on      :   Sep 9, 2018
+    Author          :   Ashish Singh Maharjan
+    Auther URI      :   http://www.asm.com.np
+    Description     :   This theme is designed for Travel website. 
+                        Shout out to http://www.unsplash.com for wonderful hd images.
+*/
+
+$color-primary: #ffc107;
+$color-primary-active: #c59504;
+$color-secondary: #343a40;
+$color-border-bottom: 1px solid rgba(52, 58, 64, 0.1);
+
+/*HOME PAGE*/
+/*################################################################################*/
+
+html,
+body {
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+}
+@font-face {
+  font-family: Ananda;
+  src: url(../fonts/ananda.ttf);
+}
+
+h1 {
+  font-family: Ananda;
+  color: $color-primary;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+p,
+small {
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar-brand a {
+  color: $color-primary;
+}
+
+/*
+MAIN NAVBAR
+--------------------------------------------------------------------------------*/
+#mainNav {
+  letter-spacing: 0.0625em;
+  background-color: $color-secondary;
+
+  .fa-globe {
+    font-size: 2rem;
+  }
+
+  .navbar-toggler {
+    font-size: 80%;
+    padding: 0.75rem;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+  }
+
+  .navbar-brand {
+    color: $color-primary;
+    font-weight: 700;
+    padding: 0.9rem 0;
+  }
+
+  .nav-link {
+    color: $color-primary;
+  }
+
+  .navbar-nav .nav-item:hover {
+    color: fade(white, 80%);
+    outline: none;
+    background-color: transparent;
+  }
+}
+
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+
+    .navbar-brand {
+      padding: 0.5rem 0;
+      color: $color-primary;
+    }
+
+    .navbar-brand:hover {
+      color: $color-primary-active;
+    }
+
+    .nav-link {
+      -webkit-transition: none;
+      transition: none;
+      padding: 2rem 1.5rem;
+      color: $color-primary;
+      font-weight: 600;
+    }
+
+    .nav-link:hover {
+      color: $color-primary-active;
+    }
+
+    .nav-link:active {
+      color: white;
+    }
+  }
+
+  #mainNav.navbar-shrink {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+
+    .navbar-brand {
+      color: $color-primary;
+    }
+
+    .nav-link {
+      color: $color-primary;
+      padding: 1.5rem 1.5rem 1.25rem;
+      border-bottom: 0.25rem solid transparent;
+      &:hover {
+        color: $color-primary-active;
+      }
+      &:active {
+        color: $color-primary-active;
+      }
+      &.active {
+        color: $color-primary-active;
+        outline: none;
+        border-bottom: 0.25rem solid $color-primary-active;
+      }
+    }
+  }
+}
+
+/*
+HEADER
+--------------------------------------------------------------------------------*/
+
+header {
+  position: relative;
+  background-color: #000;
+  height: 100%;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    z-index: 1;
+  }
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") #000
+      no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+/*
+SERVICES
+--------------------------------------------------------------------------------*/
+
+.home-services-1 {
+  border-bottom: $color-border-bottom;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.home-services-1 .fa {
+  color: $color-primary;
+}
+
+/*
+SLICK SLIDER
+--------------------------------------------------------------------------------*/
+.home-discover {
+  border-bottom: $color-border-bottom;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.home-discover-header {
+  max-width: 700px;
+}
+
+.slider {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.slick-slide {
+  margin: 0px 10px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
+.slick-dots {
+  bottom: -50px;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  &:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .item-details {
+    position: absolute;
+    background-color: rgba(40, 167, 69, 0.5);
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+  }
+
+  &:hover .addtocart {
+    display: block;
+  }
+
+  .addtocart {
+    position: absolute;
+    width: 100%;
+    display: none;
+    top: 50%;
+    text-align: center;
+  }
+}
+
+/*
+PACKAGES
+--------------------------------------------------------------------------------*/
+
+.home-pricing-1 {
+  position: relative;
+  background: url("../images/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  border-bottom: $color-border-bottom;
+  overflow: hidden;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .pricing-header {
+    position: relative;
+    z-index: 2;
+  }
+
+  .card {
+    border: 1px solid $color-primary;
+
+    .card-header {
+      background-color: $color-primary;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    z-index: 1;
+  }
+}
+
+/*
+BLOG
+--------------------------------------------------------------------------------*/
+.home-blog-1 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/*
+CONTACT US PAGE
+--------------------------------------------------------------------------------*/
+
+.home-contact-1 {
+  position: relative;
+  background: url("../images/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  form,
+  h1,
+  p {
+    position: relative;
+    z-index: 2;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-contact-1 form {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+/*
+FOOTER
+--------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+  .footer-3 .designer {
+    float: right;
+  }
+}
