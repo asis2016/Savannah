@@ -1,7 +1,6 @@
 /* 
     Created on      :   Sep 9, 2018
     Author          :   Ashish Singh Maharjan
-    Auther URI      :   http://www.asm.com.np
     Description     :   This theme is designed for Travel website. 
                         Shout out to http://www.unsplash.com for wonderful hd images.
 */
@@ -12,8 +11,6 @@ $color-secondary: #343a40;
 $color-border-bottom: 1px solid rgba(52, 58, 64, 0.1);
 
 /*HOME PAGE*/
-/*################################################################################*/
-
 html,
 body {
   height: 100%;
@@ -157,7 +154,7 @@ MAIN NAVBAR
 
 /*
 HEADER
---------------------------------------------------------------------------------*/
+-------------------------------------------------------------------------------*/
 
 header {
   position: relative;
@@ -217,10 +214,10 @@ SERVICES
   border-bottom: $color-border-bottom;
   padding-top: 6rem;
   padding-bottom: 6rem;
-}
 
-.home-services-1 .fa {
-  color: $color-primary;
+  .fa {
+    color: $color-primary;
+  }
 }
 
 /*
@@ -230,15 +227,15 @@ SLICK SLIDER
   border-bottom: $color-border-bottom;
   padding-top: 6rem;
   padding-bottom: 6rem;
-}
 
-.home-discover-header {
-  max-width: 700px;
-}
+  .home-discover-header {
+    max-width: 700px;
+  }
 
-.slider {
-  width: 80%;
-  margin: 100px auto;
+  .slider {
+    width: 80%;
+    margin: 100px auto;
+  }
 }
 
 .slick-dotted.slick-slider {
@@ -248,10 +245,10 @@ SLICK SLIDER
 
 .slick-slide {
   margin: 0px 10px;
-}
 
-.slick-slide img {
-  width: 100%;
+  img {
+    width: 100%;
+  }
 }
 
 .slick-prev:before,
@@ -388,18 +385,16 @@ CONTACT US PAGE
   }
 }
 
-@media (min-width: 768px) {
-  .home-contact-1 form {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-}
-
 /*
 FOOTER
 --------------------------------------------------------------------------------*/
 
 @media (min-width: 768px) {
+  .home-contact-1 form {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
   .footer-3 .designer {
     float: right;
   }

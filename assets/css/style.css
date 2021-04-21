@@ -1,12 +1,10 @@
 /* 
     Created on      :   Sep 9, 2018
     Author          :   Ashish Singh Maharjan
-    Auther URI      :   http://www.asm.com.np
     Description     :   This theme is designed for Travel website. 
                         Shout out to http://www.unsplash.com for wonderful hd images.
 */
 /*HOME PAGE*/
-/*################################################################################*/
 html,
 body {
   height: 100%;
@@ -136,7 +134,7 @@ MAIN NAVBAR
 }
 /*
 HEADER
---------------------------------------------------------------------------------*/
+-------------------------------------------------------------------------------*/
 header {
   position: relative;
   background-color: #000;
@@ -191,7 +189,6 @@ SERVICES
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
-
 .home-services-1 .fa {
   color: #ffc107;
 }
@@ -204,12 +201,10 @@ SLICK SLIDER
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
-
-.home-discover-header {
+.home-discover .home-discover-header {
   max-width: 700px;
 }
-
-.slider {
+.home-discover .slider {
   width: 80%;
   margin: 100px auto;
 }
@@ -222,7 +217,6 @@ SLICK SLIDER
 .slick-slide {
   margin: 0px 10px;
 }
-
 .slick-slide img {
   width: 100%;
 }
@@ -347,16 +341,15 @@ CONTACT US PAGE
   z-index: 1;
 }
 
+/*
+FOOTER
+--------------------------------------------------------------------------------*/
 @media (min-width: 768px) {
   .home-contact-1 form {
     padding-left: 6rem;
     padding-right: 6rem;
   }
-}
-/*
-FOOTER
---------------------------------------------------------------------------------*/
-@media (min-width: 768px) {
+
   .footer-3 .designer {
     float: right;
   }
